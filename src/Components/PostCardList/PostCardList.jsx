@@ -8,7 +8,7 @@ import PostContext from "../../Provider/PostContextProvider";
 function PostCardList(){
 
       let {posts} =  useContext(PostContext);
-      console.log(posts)
+    
   return posts.map((post)=><PostCard
                         key={post.id}
                         firstName={post.owner.firstName}
